@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hey, this is javascript lesson 1</p>
+    <script>
+        var a=10; //declaring the a variable.
+        console.log(a);
+           a="Hey"; // any value can be assigned char, string , int etc;
+        console.log(a);//print the value.
+           a="false";  // boolean value also can store in var;
+           console.log(a);// js is case sensitive language.
+           a=null;
+           console.log(a);
+           a=undefined;
+           console.log(a);
+
+           a=[1, 2, 3, 4, 5];//Non premitive in js which store more than 1 premitive values;
+           console.log(a);
+           a= {name:"Shashi", school:"Newton"};// Also kind of Non primitive;
+           console.log(a);
+           
+           //Access Variables.
+           var a={name:"Newton" , age: 100, town: "xyz"};
+           console.log(a.name ,a.town);//search something by using dot '.' oprator;
+           console.log(a["age"]); // searching something by using square[] bracket;
+           a.name="Alam";// name can be updated like this.
+           a["age"]=30;  // and also can be udated like this also;
+           console.log(a);
+
+           //Using the object.
+           var car= new Object(); // capital o is always used in object;
+           car.color="red";// This is the second way to give the value more than 1 time;
+           car.type="Hatchback";
+           car.price="9 lakh";
+           console.log(car);
+
+           // indexes: 0 , 1,  2,  3 ,  4
+           var ages= [10, 20, 30 , 40 , 50];
+           console.log(ages);
+           console.log(ages[2]);
+           console.log(ages[3]);//in array element can be accessed by index only we cant do ages.2;
+           ages[2]= 5000; // can be updated like this.
+           console.log(ages);
+           console.log(ages.length);//size of the array.
+
+           var ages= new Array(10 , 20);//like this.
+            ages[2]= 35;// and also like this.
+            ages[3]=34;
+           console.log(ages);
+           console.log(ages.length);
+
+           //FUNCTIONS IN JS.
+          function add( a , b){
+           console.log(a+b);
+          }
+          add(15 ,10);
+    </script>
+</body>
+</html>

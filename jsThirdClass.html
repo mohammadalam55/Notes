@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>js thirdclass-> Check for inspection<h1>
+        <script>
+            //Loops:-
+            //For loop
+            // for(var i=0; i<5; i++){
+            //     console.log("Newton");
+            // }
+            //table using for loop
+            // for(var i=1; i<=10; i++){
+            //     console.log("2 x ", i, "=" ,2*i);
+            // }
+
+            //while loop:-
+            // while(condition){
+            //     var i=0;
+            //     while(i<5){
+            //         console.log("Newton");
+            //         i++;
+            //     }
+            // }
+
+            //do while loop:-
+            var i=100;
+            do{
+                console.log("Hello World");
+                i++;
+            }while(i<5);
+
+            //arr for loop:-
+            var arr= ['newton', 'school', 'banglore', 'weather'];
+            // for(var i=0; i<arr.length; i++){
+                console.log(arr.join(", "));
+            
+            //sum of array:-
+            var sum=0;
+            var nums=[20, 30, 50, 100, 200];
+            for(var i=0; i<nums.length;i++){
+                  sum += nums[i];
+            }
+            console.log(sum);
+
+            //FOR OF LOOP for array:-
+            var nums=[20, 30, 50, 100, 200];
+            for(var item of nums){
+              console.log(item);
+            }
+            
+            //FOR IN LOOP for keys and values:-
+            var car = {name:"Tata", color:"Red", wheels:4, engine:"245442"};
+            for(var x in car){
+                console.log(x);  //for keys
+                console.log(car[x]); // for values
+            }
+            // break and continue is also work in js;
+            
+        </script>
+</body>
+</html>

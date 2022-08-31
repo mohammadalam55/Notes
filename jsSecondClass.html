@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This is js second Class</p>
+    <!-- <script src="./script.js"> -->
+
+    <script>
+        //#scope-
+var a=10;//GLOBAL SCOPE
+function fun(){
+    var a=20; //LOCAL SCOPE.
+    console.log("inside the function" , a);
+}
+console.log("outside the function" , a);
+
+//#parse Int-
+var a=10.23432483;
+console.log(a);
+console.log(parseInt(a));// parseInt will print only integer part.
+console.log(parseFloat(a));// it will print float value as it is.
+
+//BODMAS SUPPORT JS-
+console.log(a.toFixed(4));// Decimal value after the .
+console.log(Math.ceil(a)); // upper floor value
+console.log(Math.floor(a));//lower floor value
+console.log(3 + 4 * 5); // js does simple math calculations
+console.log(4 * 3 ** 2); // 4*3 power 2=36
+var a = b= 10;
+console.log(a);
+console.log(b);
+
+// CONDITIONS:-
+var a=10;
+if(a==10){
+    console.log("a is 10");
+}else if(a<10){
+    console.log("a is less than 10");
+}else if(a > 10){
+    console.log("a is greater than 10");
+}
+else{
+    console.log("all conditions failed");
+}
+
+// SWITCH:-
+var a=3;
+
+switch (a){
+    case 0:
+    case 1://if one of the condiion 0 and 1 is true then 
+        console.log("a is 1"); //executed;
+    break;
+    case 2: console.log("a is 2");
+    break;
+    case 3:console.log("a is 3");
+    break;
+    default:console.log("All conditions failed");
+}
+
+// TERNARY OPERATORS:-
+var x=20;
+var y = x == 20 ? "Yes" :" NO";
+console.log(y);
+
+//(==) and (===):-
+var a="10"; //String value.
+if(a===10){ //=== check for type and value, == checks only value;
+    // Implicit type Coercion(automatic type conversion) is done by ==;
+    console.log("a is 10");
+}else{
+    console.log("a is not 10");
+}
+
+//EXPLICIT TYPE OF CONVERSION:-
+var p= 23.53354546;
+//we need to convert manually it is called explicit.
+console.log(parseInt(p));
+console.log(parseFloat(p));
+
+//TYPE OF DATA:-
+var x=10;
+console.log(typeof x);
+var x="alam";
+console.log(typeof x);
+var x=true;
+console.log(typeof x);
+
+var x=[1, 2, 3, 4, 5];
+//console.log(typeof x); //typeof not work for array in js
+console.log(Array.isArray(x));
+
+//LOGICAL OPRATORS:-
+var a = 10;
+if(a < 15 && a > 5){ //AND condtion
+    console.log("true");
+}else{
+    console.log("false");
+}
+if(a=10 || a==15 || a==5 ){ //OR condition
+console.log("true");
+}else{
+    console.log("false");
+}
+if(a!=15){ //NOT condition
+    console.log("true");
+    }else{
+        console.log("false");
+    }
+
+
+ var a = 1; //in js 1 is true and 0 is false;
+ var b = 2;
+ var c = 0;
+
+ var d = a && b; // 1 && 2=> true && 2
+ console.log(d); 
+ var e = c && a; // 0 && 1 => false && 1
+ console.log(e);
+ var f = a && b && c; // 1 && 2 && 0 => true && 2 && 0;
+ console.log(f);
+ // null, undefine, [],0, false=>falsey values;
+ // anything other than above truthy values;
+    </script>
+</body>
+</html>
